@@ -1,0 +1,12 @@
+import numpy
+from scipy import stats
+
+heights = [75,73,73,73,73,70,70,69,69,69,68,65]
+
+x = numpy.mean(heights)
+y = numpy.median(heights)
+z = stats.mode(heights)
+
+print(f"Mean: {x}")
+print(f"Median: {y}")
+print(f"Mode: {z.mode}")
